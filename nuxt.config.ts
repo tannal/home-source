@@ -36,6 +36,8 @@ export default defineNuxtConfig({
     transpile: ['@headlessui/vue'],
   },
 
+  target: 'static',
+
   // modules
   modules: [
     'unplugin-icons/nuxt',
