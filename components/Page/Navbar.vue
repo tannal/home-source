@@ -28,12 +28,13 @@ const menus = computed((): IMenuItem[] => [
 
 <template>
   <BuilderNavbar>
-    <template #banner>
+
+    <!-- <template #banner>
       <div
         class="text-white text-xs text-center py-1 px-4 lg:px-8 bg-primary-500 capitalize"
       >
         <span class="mr-1">
-          <!-- {{ $t('banners.welcome', { app_name: app.name }) }} -->
+          {{ $t('banners.welcome', { app_name: app.name }) }}
         </span>
         <Anchor
           class="underline font-bold"
@@ -41,7 +42,9 @@ const menus = computed((): IMenuItem[] => [
           href="https://github.com/viandwi24/nuxt3-awesome-starter"
         />
       </div>
-    </template>
+    </template> -->
+
+
     <template #menu>
       <div class="relative hidden lg:flex items-center ml-auto">
         <nav

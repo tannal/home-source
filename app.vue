@@ -13,9 +13,10 @@
 
 <script lang="ts" setup>
 import { AppSetup } from './utils/app'
-import { ITheme } from './utils/theme'
+import { ITheme, IThemeSettingOptions } from './utils/theme'
 AppSetup()
 const theme = useState<ITheme>('theme.current')
+theme.value = 'light'
 const locale = useState<string>('locale.setting')
 // const app = useAppConfig()
 useHead({
