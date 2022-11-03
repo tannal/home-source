@@ -88,7 +88,7 @@ const toggleOptions = (show?: boolean) => {
                 <IconSimpleIcons:nuxtdotjs
                   class="inline-block mr-2 text-lg text-primary-500"
                 />
-                {{ app.name }}
+                {{ app['name'] }}
               </span>
             </NuxtLink>
           </slot>

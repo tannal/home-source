@@ -18,9 +18,8 @@ AppSetup()
 const theme = useState<ITheme>('theme.current')
 const locale = useState<string>('locale.setting')
 const app = useAppConfig()
-
 useHead({
-  title: app.name,
+  title: app['name'],
   titleTemplate: '%s - Nuxt 3 Awesome Starter',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
