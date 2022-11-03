@@ -40,7 +40,7 @@ jobs:
         token: ${{ secrets.ACCESS_TOKEN }}
 
     - name: Copy generated file to site
-      run: cp -r ./source/dist/ ./site
+      run: cp -r ./source/dist/* ./site
         
     - name: Push site
       run: |
